@@ -1,6 +1,6 @@
 # 🧠 Customer Churn Predictor App
 
-This interactive Shiny web app predicts the likelihood of a customer churning (leaving a service) based on key factors such as age, credit score, activity status, and more. It is powered by a **Random Forest** machine learning model trained on a telecom dataset.
+This interactive Shiny web app predicts the likelihood of a customer churning (leaving a service) based on key factors such as age, credit score, activity status, and more. It is powered by a **Random Forest** machine learning model trained on a U.S. Bank Customer dataset.
 
 The model is deployed at shinyapps.io cloud server ,thus making it accessible to anyone with internet access at any web browser.
 🌐 **Live Demo**: https://aditya-kumar-roy.shinyapps.io/Churnpredictor/
