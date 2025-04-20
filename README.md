@@ -1,65 +1,92 @@
-🧠 Customer Churn Predictor App
-This interactive Shiny web app predicts the likelihood of a customer churning (leaving a service) based on key factors such as age, credit score, activity, and more. It is powered by a Random Forest machine learning model trained on a telecom dataset.
+# 🧠 Customer Churn Predictor App
 
-🌐 Live App: Churn Predictor on shinyapps.io
+This interactive Shiny web app predicts the likelihood of a customer churning (leaving a service) based on key factors such as age, credit score, activity status, and more. It is powered by a **Random Forest** machine learning model trained on a telecom dataset.
 
-📊 Features:
+The model is deployed at shinyapps.io cloud server ,thus making it accessible to anyone with internet access at any web browser.
+🌐 **Live Demo**: https://aditya-kumar-roy.shinyapps.io/Churnpredictor/
 
--🔮 Churn Prediction using trained ML model
+---
 
--📈 Feature Importance Visualization via ggplot2
+## 📊 Features
 
--📌 Automated Insights: Displays text-based churn risk explanations (e.g., "Low balance", "High age", "Not active member")
+- 🔮 **Churn Prediction** using a trained ML model (Random Forest)
+- 📈 **Feature Importance Visualization** using `ggplot2`
+- 🧠 **Automated Insights**: Textual explanations for churn risk (e.g., *Low balance*, *High age*, *Inactive member*)
+- 🌙 **Dark Theme UI** for enhanced readability
+- 💬 **Interactive Interface** with real-time predictions based on user input
 
--🌙 Dark Theme UI for better readability
+---
 
--💬 Interactive Interface with user input for customer details
+## ⚙️ Technologies Used
 
-
-
-⚙️ Technologies Used :
-
-R Language
-
-Shiny for building the web app
-
-randomForest for machine learning
-
-caret for feature importance (varImp)
-
-ggplot2 for visualization
-
-shinythemes for styling
+- **R Language**
+- **Shiny** – Web application framework
+- **randomForest** – Machine learning model
+- **caret** – Feature importance (via `varImp`)
+- **ggplot2** – Visualization
+- **shinythemes** – Styling and themes
 
 
-🛠 How to Run Locally:
+## 🧩 How the Model Works
 
-Install R and RStudio Download and install R: Download R Download and install RStudio: Download RStudio
+### 1. User Input
+The user enters customer details via the interactive input fields on the app’s interface.
 
-Install Required R Packages Open RStudio and run: install.packages(c("shiny", "shinythemes", "randomForest", "caret", "ggplot2", "pROC"))
+### 2. Churn Prediction
+When the **"Predict Churn"** button is clicked, the Random Forest model makes a prediction on whether the customer is likely to churn.
 
-Clone the Repository Clone this repository or download it as a ZIP file. git clone https://github.com/AdityaRoy0804/Customer-Churn-Predictor.git
+### 3. Churn Risk Explanation
+The app returns textual insights based on the input data — for example, indicating if a *high age*, *low balance*, or *non-active membership* may be contributing to higher churn risk.
 
-Run the App In RStudio, open the app.R file and run it with: shiny::runApp("path/to/Customer-Churn-Predictor")
+### 4. Feature Importance Plot
+The top 5 features influencing the churn prediction are visualized in a horizontal bar plot, generated via `ggplot2`.
 
+---
 
-How the Model Works
+---
 
-User Input
+## 🛠 How to Run Locally
 
-The user enters the details of a customer using the input fields on the app's interface.
+1. **Install R and RStudio**
 
-Churn Prediction
+   - [Download R](https://cran.r-project.org/)
+   - [Download RStudio](https://posit.co/download/rstudio-desktop/)
 
-When the user clicks the "Predict Churn" button, the Random Forest model is applied to predict whether the customer is likely to churn (i.e., leave the service).
+2. **Install Required Packages**
 
-Explanation of Churn Risk
+   Open RStudio and run:
 
-The app provides reasoning based on the input data, such as why a higher age or low balance might increase the churn risk.
+   ```r
+   install.packages(c("shiny", "shinythemes", "randomForest", "caret", "ggplot2", "pROC"))
+   ```
 
-Feature Importance Plot
+3. **Clone the Repository**
 
-The app generates a bar plot showing the importance of the top 5 features influencing the churn prediction.
+   ```bash
+   git clone https://github.com/AdityaRoy0804/Customer-Churn-Predictor.git
+   ```
+
+   Or [download the ZIP](https://github.com/AdityaRoy0804/Customer-Churn-Predictor/archive/refs/heads/main.zip) and extract it.
+
+4. **Run the App**
+
+   In RStudio, open the `app.R` file and run:
+
+   ```r
+   shiny::runApp("path/to/Customer-Churn-Predictor")
+   ```
+
+---
+
+## 📬 Contact
+
+For questions, suggestions, or contributions, feel free to open an issue or pull request on the [GitHub repository](https://github.com/AdityaRoy0804/Customer-Churn-Predictor).
+
+To connect with the developer.
+Gmail : roy97278@gmail.com
+
+---
+
 
 
 
